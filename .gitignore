@@ -1,0 +1,13 @@
+target/
+*.class
+*.jar
+*.war
+node_modules/
+dist/
+.angular/
+.idea/
+.vscode/
+.env
+application-local.properties
+.DS_Store
+Thumbs.db
