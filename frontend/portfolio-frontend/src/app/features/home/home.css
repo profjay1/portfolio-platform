@@ -1,0 +1,81 @@
+.hero {
+
+padding: 6rem 4rem;
+
+background: #f8fafc;
+
+min-height: 70vh;
+
+}
+
+.eyebrow {
+
+color: #0284c7;
+
+font-weight: 700;
+
+text-transform: uppercase;
+
+letter-spacing: 0.08em;
+
+}
+
+.hero h1 {
+
+max-width: 800px;
+
+font-size: 3rem;
+
+line-height: 1.1;
+
+color: #0f172a;
+
+}
+
+.summary {
+
+max-width: 700px;
+
+font-size: 1.15rem;
+
+color: #475569;
+
+}
+
+.hero-actions {
+
+display: flex;
+
+gap: 1rem;
+
+margin-top: 2rem;
+
+}
+
+.primary-btn, .secondary-btn {
+
+padding: 0.85rem 1.2rem;
+
+border-radius: 0.5rem;
+
+text-decoration: none;
+
+font-weight: 700;
+
+}
+
+.primary-btn {
+
+background: #0284c7;
+
+color: white;
+
+}
+
+.secondary-btn {
+
+border: 1px solid #0284c7;
+
+color: #0284c7;
+
+}
