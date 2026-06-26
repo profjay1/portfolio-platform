@@ -14,6 +14,4 @@ styleUrl: './home.css'
 
 })
 
-export class Home {
-
-}
+export class Home {}
