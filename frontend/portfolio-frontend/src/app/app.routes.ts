@@ -10,6 +10,8 @@ import { Projects } from './features/projects/projects';
 
 import { Contact } from './features/contact/contact';
 
+import { Resume } from './features/resume/resume';
+
 export const routes: Routes = [
 
 { path: '', component: Home },
@@ -19,6 +21,8 @@ export const routes: Routes = [
 { path: 'skills', component: Skills },
 
 { path: 'projects', component: Projects },
+
+{ path: 'resume', component: Resume },
 
 { path: 'contact', component: Contact },
 

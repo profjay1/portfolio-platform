@@ -1,0 +1,67 @@
+.resume-page {
+
+padding: 5rem 4rem;
+
+background: #f8fafc;
+
+min-height: 70vh;
+
+}
+
+.resume-header {
+
+max-width: 900px;
+
+}
+
+.section-label {
+
+color: #0284c7;
+
+font-weight: 700;
+
+text-transform: uppercase;
+
+letter-spacing: 0.08em;
+
+}
+
+.resume-header h1 {
+
+font-size: 3rem;
+
+color: #0f172a;
+
+margin-bottom: 1rem;
+
+}
+
+.resume-header p {
+
+color: #475569;
+
+font-size: 1.1rem;
+
+line-height: 1.7;
+
+}
+
+.download-btn {
+
+display: inline-block;
+
+margin-top: 2rem;
+
+padding: 0.9rem 1.3rem;
+
+background: #0284c7;
+
+color: white;
+
+text-decoration: none;
+
+border-radius: 0.5rem;
+
+font-weight: 700;
+
+}
