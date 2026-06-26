@@ -14,7 +14,9 @@ background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
 
 .hero-content {
 
-max-width: 900px;
+max-width: 1200px;
+
+width: 100%;
 
 }
 
@@ -34,7 +36,7 @@ margin-bottom: 1rem;
 
 .hero-content h1 {
 
-font-size: 3.5rem;
+font-size: 3.2rem;
 
 line-height: 1.1;
 
@@ -52,7 +54,7 @@ line-height: 1.7;
 
 color: #475569;
 
-max-width: 760px;
+max-width: 1000px;
 
 }
 
