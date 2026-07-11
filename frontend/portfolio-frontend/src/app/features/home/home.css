@@ -70,36 +70,6 @@ margin-top: 2rem;
 
 }
 
-.primary-btn, .secondary-btn {
-
-padding: 0.9rem 1.3rem;
-
-border-radius: 0.5rem;
-
-text-decoration: none;
-
-font-weight: 700;
-
-}
-
-.primary-btn {
-
-background: #0284c7;
-
-color: #ffffff;
-
-}
-
-.secondary-btn {
-
-border: 1px solid #0284c7;
-
-color: #0284c7;
-
-background: #ffffff;
-
-}
-
 .hero-panel {
 
 background: #0f172a;

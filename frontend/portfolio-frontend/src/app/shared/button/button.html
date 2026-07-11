@@ -1,0 +1,15 @@
+<button
+  type="button"
+  class="button"
+  [class.button-primary]="variant() === 'primary'"
+  [class.button-secondary]="variant() === 'secondary'"
+  [class.button-outline]="variant() === 'outline'"
+  [class.button-danger]="variant() === 'danger'"
+  [class.button-small]="size() === 'small'"
+  [class.button-medium]="size() === 'medium'"
+  [class.button-large]="size() === 'large'"
+  [disabled]="disabled()"
+  (click)="onClick()"
+>
+  {{ label() }}
+</button>
