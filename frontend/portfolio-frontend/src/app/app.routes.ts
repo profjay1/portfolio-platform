@@ -12,6 +12,8 @@ import { Contact } from './features/contact/contact';
 
 import { Resume } from './features/resume/resume';
 
+import { ProjectDetails } from './features/project-details/project-details';
+
 export const routes: Routes = [
 
 { path: '', component: Home },
@@ -25,6 +27,8 @@ export const routes: Routes = [
 { path: 'resume', component: Resume },
 
 { path: 'contact', component: Contact },
+
+{ path: 'projects/:id', component: ProjectDetails },
 
 { path: '**', redirectTo: '' }
 

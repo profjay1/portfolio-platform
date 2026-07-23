@@ -1,1 +1,47 @@
-<p>project-card works!</p>
+<article class="project-card">
+
+<div class="project-card-header">
+
+<span class="project-status">
+
+{{ project().status }}
+
+</span>
+
+<h3>{{ project().title }}</h3>
+
+</div>
+
+<p class="project-summary">
+
+{{ project().summary }}
+
+</p>
+
+<div class="technology-list">
+
+@for (technology of project().technologies; track technology) {
+
+<app-technology-pill [name]="technology" />
+
+}
+
+</div>
+
+<div class="project-actions">
+
+<app-button
+
+label="View Details"
+
+variant="outline"
+
+size="medium"
+
+(clicked)="onViewDetails()"
+
+/>
+
+</div>
+
+</article>
