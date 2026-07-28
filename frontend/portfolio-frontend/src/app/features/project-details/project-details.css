@@ -1,0 +1,35 @@
+.project-details-section {
+  min-height: 70vh;
+  padding: 6rem 0;
+  background: var(--color-background);
+}
+
+.project-details-section h1 {
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.project-id {
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+  font-size: 1.1rem;
+}
+
+.placeholder-message {
+  max-width: 700px;
+  margin-bottom: 2rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+.back-button {
+  padding: 0.85rem 1.4rem;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}

@@ -24,11 +24,11 @@ export const routes: Routes = [
 
 { path: 'projects', component: Projects },
 
+{ path: 'projects/:id', component: ProjectDetails },
+
 { path: 'resume', component: Resume },
 
 { path: 'contact', component: Contact },
-
-{ path: 'projects/:id', component: ProjectDetails },
 
 { path: '**', redirectTo: '' }
 
