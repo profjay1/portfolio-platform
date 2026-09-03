@@ -1,26 +1,34 @@
 <section class="project-details-section">
   <div class="container">
-    <p class="section-label">Project Details</p>
+ @if (project$ | async; as project) {
+  <p class="section-label">Project Details</p>
 
-    <h1>Selected Project</h1>
+  <h1>{{ project.title }}</h1>
 
-    <p class="project-id">
-      Project ID:
-      <strong>{{ projectId }}</strong>
-    </p>
+  <p class="project-status">
+    Status: {{ project.status }}
+  </p>
 
-    <p class="placeholder-message">
-      This page confirms that Angular successfully received the selected
-      project ID from the URL. We will replace this placeholder with the
-      project’s complete information in the next stage.
-    </p>
+  <p class="project-summary">
+    {{ project.summary }}
+  </p>
 
-    <button
-      type="button"
-      class="back-button"
-      (click)="returnToProjects()"
-    >
-      Back to Projects
-    </button>
+  <h2>Technologies</h2>
+
+  <div class="technology-list">
+    @for (technology of project.technologies; track technology) {
+      <app-technology-pill [name]="technology" />
+    }
+  </div>
+
+  <app-button
+    label="Back to Projects"
+    variant="outline"
+    size="medium"
+    (clicked)="returnToProjects()"
+  />
+  } @else {
+   <p>Loading project...</p>
+ }
   </div>
 </section>

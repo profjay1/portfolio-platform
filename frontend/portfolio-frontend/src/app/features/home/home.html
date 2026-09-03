@@ -80,6 +80,7 @@
     description="Each project demonstrates requirements analysis, architecture, implementation, testing, documentation, and deployment."
   />
 
+  @if (featuredProjects$ | async; as featuredProjects) {
   <div class="project-preview-grid">
     @for (project of featuredProjects; track project.id) {
       <app-project-card
@@ -88,4 +89,5 @@
       />
     }
   </div>
+}
 </section>

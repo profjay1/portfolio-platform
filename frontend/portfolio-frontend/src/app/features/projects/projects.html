@@ -1,1 +1,30 @@
-<p>projects works!</p>
+<section class="projects-section">
+  <div class="container">
+    <app-section-header
+      label="Portfolio Projects"
+      title="Applications built through a complete engineering process"
+      description="These projects demonstrate requirements analysis, architecture, implementation, testing, documentation, DevOps, and deployment."
+    />
+
+    <div class="projects-grid">
+     @if (projects$ | async; as projects) {
+  <div class="projects-grid">
+    @for (project of projects; track project.id) {
+      <app-project-card
+        [project]="project"
+        (viewDetails)="openProject($event)"
+      />
+    } @empty {
+      <div class="empty-state">
+        <h2>No projects are available</h2>
+
+        <p>
+          Projects will appear here when they have been added to the portfolio.
+        </p>
+      </div>
+    }
+  </div>
+ }
+    </div>
+  </div>
+</section>

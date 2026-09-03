@@ -4,42 +4,23 @@ import { Project } from '../../models/project';
 import { Button } from '../../shared/button/button';
 import { ProjectCard } from '../../shared/project-card/project-card';
 import { SectionHeader } from '../../shared/section-header/section-header';
+import { inject } from '@angular/core';
+import { ProjectService } from '../../services/project';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [Button, ProjectCard, SectionHeader],
+  imports: [AsyncPipe, Button, ProjectCard, SectionHeader],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })
-export class Home {
-  constructor(private readonly router: Router) {}
 
-  featuredProjects: Project[] = [
-    {
-      id: 1,
-      title: 'Portfolio Platform',
-      summary:
-        'A full-stack portfolio content-management platform built with Angular, Spring Boot, PostgreSQL, Docker, GitHub Actions, and AWS.',
-      technologies: ['Angular', 'Spring Boot', 'PostgreSQL', 'Docker'],
-      status: 'in-progress'
-    },
-    {
-      id: 2,
-      title: 'Project Management System',
-      summary:
-        'An enterprise-style application for managing projects, tasks, teams, permissions, and delivery progress.',
-      technologies: ['Angular', 'Spring Boot', 'JWT', 'PostgreSQL'],
-      status: 'planned'
-    },
-    {
-      id: 3,
-      title: 'Cloud Deployment Pipeline',
-      summary:
-        'A DevOps project demonstrating containerization, automated testing, continuous delivery, and AWS deployment.',
-      technologies: ['Docker', 'GitHub Actions', 'AWS', 'Nginx'],
-      status: 'planned'
-    }
-  ];
+export class Home {
+  private readonly projectService = inject(ProjectService);
+  private readonly router = inject(Router);
+
+  readonly featuredProjects$ =
+    this.projectService.getFeaturedProjects();
 
   viewProjects(): void {
     this.router.navigate(['/projects']);
